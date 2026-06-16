@@ -2739,3 +2739,26 @@ select:focus {
         font-size: 2.55rem;
     }
 }
+/* =========================
+   HERO DASHBOARD CRISPNESS FIX
+========================= */
+
+.dashboard-preview {
+    transform: none;
+    backdrop-filter: none;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.dashboard-preview,
+.dashboard-preview * {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
+.preview-card {
+    backdrop-filter: none;
+}
+
+.hero-visual {
+    transform: none;
+}
