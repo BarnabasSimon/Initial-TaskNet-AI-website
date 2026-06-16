@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Demo | TaskNest AI</title>
+    <meta name="description" content="Explore the fictional TaskNest AI productivity dashboard with task cards, AI suggestions, project progress, focus analytics, and calendar preview.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- ================= DASHBOARD LAYOUT ================= -->
+    <div class="app-shell">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="app-sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="logo dashboard-logo" aria-label="TaskNest AI Home">
+                    <span class="logo-mark">TN</span>
+                    <span class="logo-text">TaskNest AI</span>
+                </a>
+
+                <button class="sidebar-close" aria-label="Close sidebar">×</button>
+            </div>
+
+            <div class="workspace-card">
+                <div class="workspace-avatar">B</div>
+                <div>
+                    <h3>Personal Workspace</h3>
+                    <p>Pro Plan</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Dashboard navigation">
+                <a href="#" class="active-dashboard-link">
+                    <span>🏠</span>
+                    Overview
+                </a>
+
+                <a href="#">
+                    <span>✅</span>
+                    Tasks
+                </a>
+
+                <a href="#">
+                    <span>🗓️</span>
+                    Calendar
+                </a>
+
+                <a href="#">
+                    <span>📁</span>
+                    Projects
+                </a>
+
+                <a href="#">
+                    <span>⏱️</span>
+                    Focus
+                </a>
+
+                <a href="#">
+                    <span>📊</span>
+                    Reports
+                </a>
+
+                <a href="#">
+                    <span>⚙️</span>
+                    Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-upgrade-card">
+                <span class="card-label">AI Boost</span>
+                <h3>Upgrade your planning</h3>
+                <p>Unlock advanced automation, smart reports, and team workflows.</p>
+                <a href="pricing.html" class="mini-btn">View plans</a>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="index.html">← Back to website</a>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN APP ================= -->
+        <main class="app-main">
+
+            <!-- ================= TOP BAR ================= -->
+            <header class="app-topbar">
+                <button class="sidebar-open" aria-label="Open sidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="topbar-title">
+                    <span class="section-eyebrow">Dashboard demo</span>
+                    <h1>Good morning, Barnabas</h1>
+                </div>
+
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <span>🔍</span>
+                        <input type="text" placeholder="Search tasks, projects, notes...">
+                    </div>
+
+                    <button class="icon-btn" aria-label="Notifications">
+                        🔔
+                    </button>
+
+                    <a href="signup.html" class="btn btn-small">Create account</a>
+                </div>
+            </header>
+
+            <!-- ================= DASHBOARD CONTENT ================= -->
+            <section class="dashboard-content">
+
+                <!-- ================= OVERVIEW HERO ================= -->
+                <div class="dashboard-welcome-card">
+                    <div class="welcome-content">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Today’s plan is ready
+                        </div>
+
+                        <h2>Your day is 87% optimized.</h2>
+
+                        <p>
+                            TaskNest AI found one overloaded time block, protected your best focus window, and moved two low-impact tasks to later.
+                        </p>
+
+                        <div class="welcome-actions">
+                            <button class="btn btn-primary">Start focus mode</button>
+                            <button class="btn btn-secondary">Replan day</button>
+                        </div>
+                    </div>
+
+                    <div class="welcome-ai-card">
+                        <div class="ai-panel-header">
+                            <span class="ai-avatar">AI</span>
+                            <div>
+                                <h3>TaskNest Assistant</h3>
+                                <p>3 suggestions available</p>
+                            </div>
+                        </div>
+
+                        <div class="ai-message">
+                            <p>
+                                Your morning is best for difficult tasks. I recommend finishing the pricing page before checking messages.
+                            </p>
+                        </div>
+
+                        <div class="ai-action-list">
+                            <button>Apply plan</button>
+                            <button>View details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= STAT CARDS ================= -->
+                <div class="dashboard-stat-grid">
+                    <article class="dashboard-stat-card">
+                        <div>
+                            <span class="card-label">Focus Score</span>
+                            <strong>87%</strong>
+                            <p>+12% from last week</p>
+                        </div>
+
+                        <div class="mini-circle-stat">
+                            <span>87</span>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-stat-card">
+                        <div>
+                            <span class="card-label">Tasks Today</span>
+                            <strong>12 / 16</strong>
+                            <p>4 tasks remaining</p>
+                        </div>
+
+                        <div class="progress-line">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-stat-card">
+                        <div>
+                            <span class="card-label">Deep Work</span>
+                            <strong>4h 20m</strong>
+                            <p>Goal: 5 hours</p>
+                        </div>
+
+                        <div class="progress-line">
+                            <span style="width: 86%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-stat-card">
+                        <div>
+                            <span class="card-label">Project Health</span>
+                            <strong>On track</strong>
+                            <p>2 deadlines protected</p>
+                        </div>
+
+                        <div class="status-pill">
+                            <span></span>
+                            Healthy
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ================= MAIN GRID ================= -->
+                <div class="dashboard-grid">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="dashboard-left-column">
+
+                        <!-- TASKS -->
+                        <section class="dashboard-panel tasks-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Priority queue</span>
+                                    <h2>Today’s tasks</h2>
+                                </div>
+
+                                <button class="mini-btn">+ Add task</button>
+                            </div>
+
+                            <div class="task-list">
+                                <article class="dashboard-task completed-task">
+                                    <label class="task-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span></span>
+                                    </label>
+
+                                    <div class="task-info">
+                                        <h3>Review homepage structure</h3>
+                                        <p>Completed · Web project</p>
+                                    </div>
+
+                                    <span class="priority-badge low-priority-badge">Done</span>
+                                </article>
+
+                                <article class="dashboard-task active-task">
+                                    <label class="task-checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="task-info">
+                                        <h3>Build pricing page layout</h3>
+                                        <p>High priority · 90 min estimate</p>
+                                    </div>
+
+                                    <span class="priority-badge high-priority-badge">High</span>
+                                </article>
+
+                                <article class="dashboard-task">
+                                    <label class="task-checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="task-info">
+                                        <h3>Prepare dashboard components</h3>
+                                        <p>Medium priority · 75 min estimate</p>
+                                    </div>
+
+                                    <span class="priority-badge medium-priority-badge">Medium</span>
+                                </article>
+
+                                <article class="dashboard-task">
+                                    <label class="task-checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="task-info">
+                                        <h3>Check mobile navigation plan</h3>
+                                        <p>Medium priority · 25 min estimate</p>
+                                    </div>
+
+                                    <span class="priority-badge medium-priority-badge">Medium</span>
+                                </article>
+
+                                <article class="dashboard-task">
+                                    <label class="task-checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="task-info">
+                                        <h3>Write README outline</h3>
+                                        <p>Low priority · 30 min estimate</p>
+                                    </div>
+
+                                    <span class="priority-badge low-priority-badge">Low</span>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- PRODUCTIVITY CHART -->
+                        <section class="dashboard-panel productivity-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Weekly analytics</span>
+                                    <h2>Productivity flow</h2>
+                                </div>
+
+                                <select class="dashboard-select" aria-label="Select chart range">
+                                    <option>This week</option>
+                                    <option>Last week</option>
+                                    <option>This month</option>
+                                </select>
+                            </div>
+
+                            <div class="large-chart">
+                                <div class="chart-column">
+                                    <span style="height: 42%;"></span>
+                                    <p>Mon</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 68%;"></span>
+                                    <p>Tue</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 54%;"></span>
+                                    <p>Wed</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 88%;"></span>
+                                    <p>Thu</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 74%;"></span>
+                                    <p>Fri</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 38%;"></span>
+                                    <p>Sat</p>
+                                </div>
+
+                                <div class="chart-column">
+                                    <span style="height: 61%;"></span>
+                                    <p>Sun</p>
+                                </div>
+                            </div>
+
+                            <div class="chart-summary-grid">
+                                <div>
+                                    <strong>24</strong>
+                                    <span>tasks completed</span>
+                                </div>
+
+                                <div>
+                                    <strong>16h</strong>
+                                    <span>focus time</span>
+                                </div>
+
+                                <div>
+                                    <strong>76%</strong>
+                                    <span>planning accuracy</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- PROJECT BOARD -->
+                        <section class="dashboard-panel project-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Projects</span>
+                                    <h2>Active project board</h2>
+                                </div>
+
+                                <button class="mini-btn">Open board</button>
+                            </div>
+
+                            <div class="dashboard-board">
+                                <div class="board-column">
+                                    <h3>Backlog</h3>
+
+                                    <div class="board-task">
+                                        <strong>Collect SaaS references</strong>
+                                        <p>Research</p>
+                                    </div>
+
+                                    <div class="board-task">
+                                        <strong>Plan JavaScript interactions</strong>
+                                        <p>Development</p>
+                                    </div>
+                                </div>
+
+                                <div class="board-column">
+                                    <h3>In Progress</h3>
+
+                                    <div class="board-task highlight-task">
+                                        <strong>Build HTML pages</strong>
+                                        <p>Website structure</p>
+                                    </div>
+
+                                    <div class="board-task">
+                                        <strong>Create dashboard layout</strong>
+                                        <p>UI design</p>
+                                    </div>
+                                </div>
+
+                                <div class="board-column">
+                                    <h3>Done</h3>
+
+                                    <div class="board-task done-task">
+                                        <strong>Choose project idea</strong>
+                                        <p>Planning</p>
+                                    </div>
+
+                                    <div class="board-task done-task">
+                                        <strong>Create page list</strong>
+                                        <p>Structure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="dashboard-right-column">
+
+                        <!-- AI SUGGESTIONS -->
+                        <section class="dashboard-panel ai-suggestions-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">AI suggestions</span>
+                                    <h2>Recommended actions</h2>
+                                </div>
+                            </div>
+
+                            <div class="suggestion-list">
+                                <article class="suggestion-card">
+                                    <div class="suggestion-icon">⚡</div>
+                                    <div>
+                                        <h3>Protect focus block</h3>
+                                        <p>Move messages to 11:30 so you can finish the pricing layout first.</p>
+                                    </div>
+                                </article>
+
+                                <article class="suggestion-card">
+                                    <div class="suggestion-icon">🗓️</div>
+                                    <div>
+                                        <h3>Reschedule low-impact task</h3>
+                                        <p>README writing can move to tomorrow without affecting your project timeline.</p>
+                                    </div>
+                                </article>
+
+                                <article class="suggestion-card">
+                                    <div class="suggestion-icon">🎯</div>
+                                    <div>
+                                        <h3>Split dashboard work</h3>
+                                        <p>Separate dashboard HTML, CSS, and JS into different sessions.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- CALENDAR -->
+                        <section class="dashboard-panel calendar-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Calendar</span>
+                                    <h2>Today</h2>
+                                </div>
+                            </div>
+
+                            <div class="calendar-list">
+                                <div class="calendar-item">
+                                    <span>09:00</span>
+                                    <div>
+                                        <h3>Deep work</h3>
+                                        <p>Pricing page layout</p>
+                                    </div>
+                                </div>
+
+                                <div class="calendar-item">
+                                    <span>11:30</span>
+                                    <div>
+                                        <h3>Admin block</h3>
+                                        <p>Messages and small fixes</p>
+                                    </div>
+                                </div>
+
+                                <div class="calendar-item active-calendar-item">
+                                    <span>14:00</span>
+                                    <div>
+                                        <h3>Dashboard build</h3>
+                                        <p>Cards, charts, and panels</p>
+                                    </div>
+                                </div>
+
+                                <div class="calendar-item">
+                                    <span>17:00</span>
+                                    <div>
+                                        <h3>Review</h3>
+                                        <p>Check page links</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- FOCUS SESSION -->
+                        <section class="dashboard-panel focus-session-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Focus mode</span>
+                                    <h2>Current session</h2>
+                                </div>
+                            </div>
+
+                            <div class="focus-session-card">
+                                <h3>Build pricing page layout</h3>
+                                <p>High-priority work block</p>
+
+                                <div class="focus-timer">
+                                    <strong>33:18</strong>
+                                    <span>remaining</span>
+                                </div>
+
+                                <div class="progress-line">
+                                    <span style="width: 62%;"></span>
+                                </div>
+
+                                <div class="focus-actions">
+                                    <button class="mini-btn">Pause</button>
+                                    <button class="mini-btn">Finish</button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- RECENT ACTIVITY -->
+                        <section class="dashboard-panel activity-panel">
+                            <div class="panel-header">
+                                <div>
+                                    <span class="section-eyebrow">Activity</span>
+                                    <h2>Recent updates</h2>
+                                </div>
+                            </div>
+
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <span></span>
+                                    <p>AI replanned your morning focus block.</p>
+                                </div>
+
+                                <div class="activity-item">
+                                    <span></span>
+                                    <p>Homepage structure marked complete.</p>
+                                </div>
+
+                                <div class="activity-item">
+                                    <span></span>
+                                    <p>New project deadline added.</p>
+                                </div>
+
+                                <div class="activity-item">
+                                    <span></span>
+                                    <p>Weekly focus score increased by 12%.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
