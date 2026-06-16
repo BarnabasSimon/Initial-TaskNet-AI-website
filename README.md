@@ -5,7 +5,7 @@ The website presents a modern productivity platform that helps users plan their 
 
 ## Live Demo
 
-Live site: `PASTE YOUR VERCEL LINK HERE`
+Live site: https://initial-task-net-ai-website.vercel.app/
 
 ## Project Overview
 
